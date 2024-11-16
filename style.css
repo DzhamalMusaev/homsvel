@@ -1,0 +1,230 @@
+/* Общие стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+  line-height: 1.6;
+  background-image: url('img/a1.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Контейнеры */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #ff6347;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Секция с кнопкой подписки */
+.subscribe-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  padding: 15px 25px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-5px);
+}
+
+.arrow {
+  font-size: 30px;
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+.subscribe-text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Заголовок */
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Секция "Обо мне" */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Секция "Услуги" */
+.services {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-item {
+  width: 30%;
+  color: #fff;
+}
+
+.service-item i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* Секция "Портфолио" */
+.portfolio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: 30%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-item h4 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* Секция "Контакты" */
+.contact {
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.telegram-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0088cc;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.telegram-link:hover {
+  background-color: #005f99;
+}
+
+.telegram-link i {
+  margin-right: 10px;
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #333;
+}
+
+.footer p {
+  color: #bbb;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text {
+      width: 100%;
+  }
+
+  .services-list {
+      flex-direction: column;
+  }
+
+  .service-item {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .portfolio-grid {
+      flex-direction: column;
+  }
+
+  .portfolio-item {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}

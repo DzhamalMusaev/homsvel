@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мой Сайт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Lora:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Стрелка и кнопка для подписки -->
+    <div class="subscribe-section" data-aos="fade-up">
+        <a href="https://t.me/homsveldesign" target="_blank" class="subscribe-btn">
+            <span class="arrow">&#8594;</span>
+            <span class="subscribe-text">Для подписки на канал нажми</span>
+        </a>
+    </div>
+
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <h1 class="heading">Добро пожаловать на мой сайт!</h1>
+            <p class="subheading">Я IT-разработчик и дизайнер в одном лице.</p>
+        </div>
+    </header>
+
+    <section class="about" data-aos="fade-up">
+        <div class="container">
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>Я занимаюсь разработкой веб-сайтов и приложений, а также создаю уникальный дизайн для ваших проектов. Мои работы — это результат внимания к деталям, технической компетенции и креативности.</p>
+            </div>
+            <div class="about-img">
+                <img src="img/text.png" alt="Меня" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" data-aos="fade-up">
+        <div class="container">
+            <h2>Мои Услуги</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fa fa-laptop-code"></i>
+                    <h3>Разработка</h3>
+                    <p>Создание веб-сайтов и приложений с использованием современных технологий.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-paint-brush"></i>
+                    <h3>Дизайн</h3>
+                    <p>Дизайн логотипов, брендинг, создание визуальных концептов.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-cogs"></i>
+                    <h3>Поддержка</h3>
+                    <p>Обеспечиваю техническую поддержку и обновления для ваших проектов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" data-aos="fade-left">
+        <div class="container">
+            <h2>Мои Работы</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="img/a3.jpg" alt="Работа 1" class="img-fluid">
+                    <h4>Проект 1</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/a4.jpg" alt="Работа 2" class="img-fluid">
+                    <h4>Проект 2</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/a2.jpg" alt="Работа 3" class="img-fluid">
+                    <h4>Проект 3</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Связаться со мной</h2>
+            <p>Если вы хотите обсудить проект или сотрудничество, напишите мне.</p>
+            <a href="https://t.me/Homsvel" target="_blank" class="telegram-link">
+                <i class="fa fa-telegram"></i> Написать в Telegram
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
